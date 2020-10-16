@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - DestinyApp Working</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div id="destiny-app">
+  <div v-for="card in cards" class="card" :style="{backgroundColor:card.color}">
+    <img class="img":src="card.img">
+    <div class="health">{{card.health}}</div>
+    <div class="rarity rare"></div>
+    <div v-show="card.rarity" class="rarity legendary"></div>
+    
+    
+    <div class="name">{{card.name}}</div>
+    <div class="affl villain">{{card.affl}}</div>
+  </div>
+    
+  </div>
+</div>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.11/vue.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
